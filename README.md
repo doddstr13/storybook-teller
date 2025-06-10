@@ -1,48 +1,50 @@
 # StoryBook Teller
 
-A modern ASP.NET Core 9 web application for creating and sharing interactive stories.
+A .NET 9 ASP.NET Core web application for creating and sharing interactive stories.
 
 ## Project Overview
 
-StoryBook Teller is a web application that allows users to create, share, and explore interactive stories. Built with the latest ASP.NET Core 9 framework, it provides a robust and scalable platform for storytelling enthusiasts.
+StoryBook Teller is a web application that allows users to create, share, and explore interactive stories. Built with ASP.NET Core 9, this application demonstrates modern web development practices using the MVC architectural pattern.
 
 ## Features
 
 - Create interactive stories with branching narratives
-- Share your stories with the community
+- Share stories with friends or publish to the community
 - Explore stories created by other users
-- User-friendly interface for both creators and readers
+- User authentication and profile management
+- Responsive design for mobile and desktop
 
 ## Technology Stack
 
-- ASP.NET Core 9.0
+- .NET 9 ASP.NET Core
 - C# 12
 - MVC Architecture
-- Bootstrap 5 for responsive design
 - Entity Framework Core (for future database integration)
+- Bootstrap 5 for responsive UI
+- JavaScript for client-side interactions
 
 ## Getting Started
 
 ### Prerequisites
 
 - .NET 9 SDK
-- Visual Studio 2022 or Visual Studio Code
+- Visual Studio 2022, Visual Studio Code, or JetBrains Rider
 
 ### Installation
 
 1. Clone the repository
    ```
-   git clone https://github.com/yourusername/storybook-teller.git
+   git clone https://github.com/yourusername/StoryBookTeller.git
    ```
 
 2. Navigate to the project directory
    ```
-   cd storybook-teller
+   cd StoryBookTeller
    ```
 
-3. Build the project
+3. Restore dependencies
    ```
-   dotnet build
+   dotnet restore
    ```
 
 4. Run the application
@@ -50,35 +52,41 @@ StoryBook Teller is a web application that allows users to create, share, and ex
    dotnet run
    ```
 
-5. Open your browser and navigate to `https://localhost:5001` or `http://localhost:5000`
+5. Open your browser and navigate to `https://localhost:7001`
 
 ## Project Structure
 
-- **Controllers/** - Contains MVC controllers
-- **Models/** - Contains data models
-- **Views/** - Contains Razor views
-- **wwwroot/** - Contains static files (CSS, JS, images)
+- `/Controllers` - MVC Controllers
+- `/Models` - Data models
+- `/Views` - Razor views
+- `/wwwroot` - Static files (CSS, JS, images)
+- `/Properties` - Application properties and launch settings
 
 ## Development
 
 ### Development Environment
 
-The application is configured to use different settings for development and production environments. The development environment provides more detailed error information and debugging capabilities.
+The application is configured to run in development mode by default. You can modify the environment settings in `Properties/launchSettings.json`.
 
-### Adding New Features
+### Building the Project
 
-1. Create appropriate models in the Models directory
-2. Create controllers in the Controllers directory
-3. Create views in the Views directory
-4. Update routing in Program.cs if necessary
+```
+dotnet build
+```
+
+### Running Tests
+
+```
+dotnet test
+```
 
 ## Contributing
 
 1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Open a pull request
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
 ## License
 
@@ -86,5 +94,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Acknowledgments
 
-- Microsoft for the ASP.NET Core framework
-- The open-source community for their valuable contributions
+- ASP.NET Core team for the amazing framework
+- Bootstrap team for the responsive UI components
+- All contributors who help improve this project
